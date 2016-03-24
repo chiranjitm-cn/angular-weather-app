@@ -1,0 +1,12 @@
+<div class="inner cover">
+	<h1 class="cover-heading">Contact</h1>
+	<form class="contactForm" name="myForm">
+		<input type="text" name="firstname" ng-model="firstname" placeholder="First Name" required>
+		<span ng-show="myForm.firstname.$touched && myForm.firstname.$invalid">The name is required.</span>
+		<input type="text" ng-model="lastname" placeholder="Last Name" >
+		<input type="email" ng-model="email" placeholder="e.g: xyz@abc.com">
+		<textarea ng-model="message" placeholder="Message..."></textarea>
+		<input type="submit" value="Send">
+		<input type="button" ng-click="reset();" value="Reset">
+	</form>
+</div>
